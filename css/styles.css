@@ -1,0 +1,26 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+header h1{
+   
+    background: black;
+    color: white;
+    padding: 35px 15px;
+}
+
+
+header h2,
+header p{
+    margin: 20px 15px;
+    padding: 40px auto;
+/*    font-size: 0.9em;*/
+    font-family: 'Nunito', sans-serif;
+}
+
+header p {
+    border-bottom: 1px solid black;
+}
