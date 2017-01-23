@@ -56,78 +56,64 @@ Header settings
     padding-bottom: 30px;
 }
 
-/*
-
-
-
-.header h2 {
-    margin: 20px 15px;  
-    
-}
-
-.header h2{
-    padding-top: 20px;
-    font-size: 1.2em;
-}
-
-.header p {
-   
-    margin-left: 15px;
-    margin-right: 15px;
-     padding-bottom: 25px;    
-    font-size: 0.9em;
-    font-weight: lighter;
-    border-bottom: 3px solid black;
-}
-*/
 
 /*----------------------------------
 Form settings
 ------------------------------------*/
 form{
     margin-top: 3px;   
-    border-top: 2px solid black;    
-    
+    border-top: 2px solid black;     
 }
-
 
 fieldset {
     border: none;
     padding: 0px;
 }
 
-fieldset:nth-child(1) {
+div fieldset:nth-child(1) {
     border-bottom: 2px solid black;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
-label, input, legend {
+/* Align the first two inputs on right*/
+.basic-details input:nth-child(1n+1) {
+    text-align: right;
+}
+
+ .basic-details,
+ .basic-details label,
+ .basic-details input {
     display: block;
     text-align: left;    
     margin: 0px;
     width: 100%;
 }
 
-legend {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-weight: bold;
-}
-
-.required {
-    text-align: right;
-}
-label {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.basic-details label,
+.basic-details input,
+.additional-details label,
+.additional-details label{   
     color: #999999;
 }
 
-input {
+.basic-details legend,
+.additional-details legend{
+    margin: 0;
+    padding-top: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.basic-details label {
+    padding-top: 15px;
+    padding-bottom: 15px;   
+}
+
+.basic-details input {
     padding-top: 7px;
     padding-bottom: 7px;
-    border-radius: 5%;
-    text-align: left;
+    border-radius: 5%;   
+    background: lightgray;
 }
 
 input[name="zip_code"] {
@@ -142,3 +128,33 @@ select {
 select;invalid {
     color: grey;
 }
+
+.additional-details label:nth-of-type(1) {
+    display: block;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+input[type="checkbox"] + label {
+/*    display: inline-block;*/
+    text-align: left;
+    width: 100%;
+}
+
+/*
+.additional-details input,
+.additional-details label{
+    display: inline-block;
+    text-align: left; 
+    padding: 0;
+    margin: 0;
+  
+}
+*/
+/*
+.additional-details label,
+ .additional-details input{  
+    text-align: left;    
+    margin: 0px;
+    width: 100%;
+}*/
