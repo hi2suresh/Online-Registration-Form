@@ -70,7 +70,7 @@ fieldset {
     padding: 0px;
 }
 
-div fieldset:nth-child(1) {
+.basic-details fieldset {
     border-bottom: 2px solid black;
     padding: 20px 0px;
 }
@@ -92,7 +92,7 @@ div fieldset:nth-child(1) {
 .basic-details label,
 .basic-details input,
 .additional-details label,
-.additional-details label{   
+.additional-details label {   
     color: #999999;
 }
 
@@ -125,9 +125,6 @@ select {
     padding-bottom: 10px;
 }
 
-select;invalid {
-    color: grey;
-}
 
 .additional-details label:nth-of-type(1) {
     display: block;
@@ -135,26 +132,47 @@ select;invalid {
     padding-bottom: 15px;
 }
 
-input[type="checkbox"] + label {
-/*    display: inline-block;*/
-    text-align: left;
-    width: 100%;
+.additional-details,
+.additional-details label{
+ text-align: left;
 }
 
-/*
-.additional-details input,
-.additional-details label{
-    display: inline-block;
-    text-align: left; 
-    padding: 0;
-    margin: 0;
-  
+.additional-details label:nth-of-type(1n+2) {
+    padding-left: 7px;    
 }
-*/
-/*
-.additional-details label,
- .additional-details input{  
-    text-align: left;    
-    margin: 0px;
+
+.additional-details input,
+.additional-details label:nth-of-type(1n+2) {
+    margin-bottom: 15px;
+}
+
+.additional-details label:nth-of-type(5),
+.additional-details label:nth-of-type(8){
+    display: block;   
+    margin-top: 10px;
+    padding-left: 0;    
+}
+
+.additional-details textarea {
     width: 100%;
-}*/
+    height: 100px;
+    background: lightgrey;
+    margin-bottom: 20px;   
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: green;
+    border-radius: 5px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.form p {
+    color: #999999;
+    font-size: 0.8em;
+    padding-top: 25px;
+    font-style: italic;
+}
