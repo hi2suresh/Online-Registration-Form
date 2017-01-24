@@ -70,7 +70,7 @@ fieldset {
     padding: 0px;
 }
 
-.basic-details fieldset {
+.basic-details {
     border-bottom: 2px solid black;
     padding: 20px 0px;
 }
