@@ -60,6 +60,13 @@ form{
     border-top: 2px solid black;     
 }
 
+.basic-details input:focus,
+.additional-details input:focus
+{
+    background-color: #efe;
+  border: 1px solid #273;
+}
+
 fieldset {
     border: none;
     padding: 0px;
