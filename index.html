@@ -23,19 +23,29 @@
         
         <div class="form">
         <form action="index.html" method="post">            
-            <div>
+            <div class="contact-section">
                 <fieldset class="basic-details">
                     <legend>Contact Information</legend>
                     <label for="name">Full Name</label>
                     <input class="required" type="text" id="name" size="25" name="full_name" required placeholder="Required" >
+                    <div class="clearfix"></div>
+                    
                     <label for="user_email">Email Address</label>
                     <input class="required" type="email" id="user_email" name="user_email" required placeholder="Required">
+                    <div class="clearfix"></div>
+
                     <label for="user_phone">Phone Number</label>
                     <input type="tel" id="user_phone" name="phone">
+                    <div class="clearfix"></div>
+                    
                     <label for="address">Street Address</label>
                     <input type="text" id="address" name="address">
+                    <div class="clearfix"></div>
+                    
                     <label for="city">City</label>
                     <input type="text" id="city" name="city">
+                    <div class="clearfix"></div>
+                    
                     <label for="state">State</label>
                     <select id="state" name="state" required>
                         <option value="" disabled selected>  Choose State</option>
@@ -44,10 +54,14 @@
                         <option value="vic">VIC</option>
                         <option value="tas">TAS</option>
                     </select>
+                    <div class="clearfix"></div>
+                    
                     <label for="zip">Zip Code</label>                   
-                    <input type="text" id="zip" name="zip_code"> </fieldset>
+                    <input  type="text" id="zip" name="zip_code"> </fieldset>
+                    <div class="clearfix"></div>
+                
             </div>
-            <div>
+            <div class="news-section">
                 <fieldset class="additional-details">
                     <legend>News letter</legend>
                     <label>Select the newsletters you would like to recieve</label>

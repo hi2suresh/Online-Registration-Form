@@ -72,7 +72,7 @@ fieldset {
 
 .basic-details {
     border-bottom: 2px solid black;
-    padding: 20px 0px;
+    padding: 30px 0px;
 }
 
 
@@ -209,12 +209,41 @@ input[type="submit"] {
   text-align: right;
 }
 
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 25px;
+}
 /*----------------------------------
 Settings for Tablet and Desktop
 ------------------------------------*/
 @media (min-width: 768px) {
     .top,
-.form {
-      width: 50%;
-}
+    .form {
+        width: 60%;
+    }
+
+    .basic-details legend {
+        padding-top: 40px;
+/*        padding-bottom: 15px;*/
+    }
+
+        
+    .basic-details label {
+        display: inline-block;
+        margin: 0;
+        padding: 10px 0 0 0;
+        width: 40%;
+    }
+    
+    .basic-details input, select {       
+     float: right;
+     width: 60%;
+    }
+    
+    .basic-details input:last-child {
+        width: 30%;       
+        display: inline;
+    }
 }
