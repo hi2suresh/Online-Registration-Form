@@ -131,18 +131,21 @@ select {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
+    background: lightgray;
 }
 
 
 /*Workaround for select placeholder*/
 
-select:required:invalid {
-    color: #999;
+select
+{
+    color: #999999;
+}
+option
+{
+    color: #000;
 }
 
-option[value=""][disabled] {
-    display: none;
-}
 
 textarea {
     resize: none;
