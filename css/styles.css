@@ -127,11 +127,17 @@ input[name="zip_code"] {
 }
 
 select {
+    -webkit-appearance: none;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 5px;
-    background: lightgray;
+    padding-left: 5px; 
+    background-color: lightgray;
+    background-image: url(../images/capture.PNG);
+/*    background-size: 15px 15px;*/
+    background-repeat: no-repeat;
+    background-position: right center;
+
 }
 
 
